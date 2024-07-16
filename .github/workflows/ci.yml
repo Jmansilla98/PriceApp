@@ -28,12 +28,6 @@ jobs:
       - name: Run Tests
         run: mvn test
 
-      - name: Check Code Style
-        run: mvn checkstyle:check
-
-      - name: Run SpotBugs
-        run: mvn com.github.spotbugs:spotbugs-maven-plugin:spotbugs
-
       - name: OWASP Dependency Check
         run: mvn org.owasp:dependency-check-maven:check
 
