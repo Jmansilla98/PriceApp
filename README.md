@@ -1,7 +1,7 @@
 # PriceApp
 
 [![CI Pipeline](https://github.com/Jmansilla98/PriceApp/actions/workflows/ci.yml/badge.svg)](https://github.com/Jmansilla98/PriceApp/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/Jmansilla98/PriceApp/branch/main/graph/badge.svg)](https://codecov.io/gh/Jmansilla98/PriceApp)
+[![codecov](https://codecov.io/github/Jmansilla98/PriceApp/graph/badge.svg?token=7JAURFC4U5)](https://codecov.io/github/Jmansilla98/PriceApp)
 
 This is a Spring Boot application for managing product prices.
 
