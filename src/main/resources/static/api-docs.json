@@ -1,0 +1,108 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API for pricing service",
+      "version": "1.0.0",
+      "title": "Pricing API",
+      "contact": {
+        "email": "example@example.com"
+      }
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Pricing API",
+        "description": "Operations related to pricing"
+      }
+    ],
+    "paths": {
+      "/price": {
+        "get": {
+          "tags": ["Pricing API"],
+          "summary": "Get applicable price",
+          "description": "Returns the applicable price for a given product, brand, and application date.",
+          "operationId": "getPrice",
+          "produces": ["application/json"],
+          "parameters": [
+            {
+              "name": "productId",
+              "in": "query",
+              "description": "Product ID",
+              "required": true,
+              "type": "integer"
+            },
+            {
+              "name": "brandId",
+              "in": "query",
+              "description": "Brand ID",
+              "required": true,
+              "type": "integer"
+            },
+            {
+              "name": "applicationDate",
+              "in": "query",
+              "description": "Application Date",
+              "required": true,
+              "type": "string",
+              "format": "date-time"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/Price"
+              }
+            },
+            "404": {
+              "description": "Price not found"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Price": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "brandId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "priceList": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "priority": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "curr": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+  
