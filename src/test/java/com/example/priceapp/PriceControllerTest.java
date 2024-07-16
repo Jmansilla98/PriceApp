@@ -68,4 +68,14 @@ class PriceControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.price").value(38.95));
     }
+
+    @Test
+    void testGetPriceAt22On16th() throws Exception {
+        mockMvc.perform(get("/price")
+                .param("productId", "35455")
+                .param("brandId", "1")
+                .param("applicationDate", "2020-06-16-22.00.00"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.price").value(40.95));
+    }
 }

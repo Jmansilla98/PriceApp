@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "0429dad4-18f4-4305-93fa-f64f247f07a7",
+		"name": "PriceApp API",
+		"description": "Collection to test PriceApp API endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29429730"
+	},
+	"item": [
+		{
+			"name": "Get Price at 10:00 on 14th",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14-10.00.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "applicationDate",
+							"value": "2020-06-14-10.00.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Price at 16:00 on 14th",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14-16.00.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "applicationDate",
+							"value": "2020-06-14-16.00.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Price at 21:00 on 14th",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14-21.00.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "applicationDate",
+							"value": "2020-06-14-21.00.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Price at 10:00 on 15th",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-15-10.00.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "applicationDate",
+							"value": "2020-06-15-10.00.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Price at 21:00 on 16th",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-16-21.00.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "applicationDate",
+							"value": "2020-06-16-21.00.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Price with more Priority",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-16-17.30.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "applicationDate",
+							"value": "2020-06-16-22.30.00"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
