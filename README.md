@@ -36,16 +36,16 @@ Here are the endpoints included in the Postman collection:
 
 ### Get Price at 10:00 on 14th
 
-URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14T10:00:00
+URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14-10.00.00
 ### Get Price at 16:00 on 14th
 
-URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14T16:00:00
+URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14-16.00.00
 ### Get Price at 21:00 on 14th
 
-URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14T21:00:00
+URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14-21.00.00 
 ### Get Price at 10:00 on 15th
 
-URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-15T10:00:00
+URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-15-10.00.00
 ### Get Price at 21:00 on 16th
 
-URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-16T21:00:00
+URL: http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-16-21.00.00
